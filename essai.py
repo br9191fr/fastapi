@@ -1,4 +1,8 @@
+from typing_extensions import Annotated
 
+
+def say_hello(name: Annotated[str, "this is just metadata"]) -> str:
+    return f"Hello {name}"
 
 def get_full_name(first_name: str, last_name: str):
     full_name = first_name.title() + " " + last_name.lower()
@@ -20,6 +24,7 @@ def main():
     process_items0(l)
     d : dict[str, float] = {"first": 100, "second": 200, "third": 300}
     process_items1(d)
+    print("Welcome with \"{0}\"".format(say_hello('John Deer')))
 
 
 
