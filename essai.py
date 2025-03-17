@@ -24,7 +24,7 @@ def main():
     process_items0(l)
     d : dict[str, float] = {"first": 100, "second": 200, "third": 300}
     process_items1(d)
-    print("Welcome with \"{0}\"".format(say_hello('John Deer')))
+    print("Bienvenue with \"{0}\"".format(say_hello('John Deer')))
 
 
 
